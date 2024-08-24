@@ -2,7 +2,8 @@
 
 ## LangChain_SarvamAI2B_Demo.ipynb
 
-This project demonstrates a Retrieval-Augmented Generation (RAG) application using LangChain and the Sarvam AI 2B-v0.5 language model.
+This project showcases the use of [LangChain](https://www.langchain.com) with the [Sarvam AI 2B-v0.5](https://huggingface.co/sarvamai/sarvam-2b-v0.5) LLM to build a Retrieval-Augmented Generation (RAG) application that fetches URLs, creates embeddings using [Google BERT multilingual uncased](https://huggingface.co/google-bert/bert-base-multilingual-uncased), and responds to user queries based on these embeddings.
+
 
 ### Overview
 
@@ -24,4 +25,23 @@ This application allows users to ask questions and receive answers based on info
 2. **Provide URLs:**  Provide a list of URLs or a method to fetch relevant URLs based on user queries.
 3. **Run the Application:** Execute the main script to start the application.
 
+## Dependencies
 
+1. LangChain Core: For document loaders, text splitting, and retrieval chains
+2. Gradio: For creating the web interface
+3. FAISS: For vector storage and similarity search
+4. Google BERT: For generating embeddings
+5. Sarvamai 2B Model: For text generation
+
+## Demo Images
+
+The first demo involves using the correct link and querying the LLM, which successfully returns the correct output based on that link.
+![Demo 1](demo1.png)
+
+The second demo demonstrates what happens when an incorrect link is used. In this case, the LLM attempts to provide a response based on its trained data, leading to an incorrect output.
+![Demo 2](demo1.png)
+
+
+## Disclaimer
+
+The developer is not responsible for any inappropriate data generation. The pretrained models are utilized as-is without any modifications.
