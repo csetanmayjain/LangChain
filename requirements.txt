@@ -1,0 +1,6 @@
+langchain_core 
+langchain_community 
+faiss-gpu 
+sentence_transformers
+gradio 
+streamlit 
