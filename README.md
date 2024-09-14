@@ -45,3 +45,5 @@ The second demo demonstrates what happens when an incorrect link is used. In thi
 ## Disclaimer
 
 The developer is not responsible for any inappropriate data generation. The pretrained models are utilized as-is without any modifications.
+
+### License: CC BY-NC
